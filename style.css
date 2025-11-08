@@ -3,14 +3,35 @@ noI'm/* Reset */
 html {scroll-behavior: smooth;}
 body {background-color:#121212; color:#fff; line-height:1.6;}   
 
-header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background: transparent;
-    padding: 20px;
+/* header */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: #00ffd5;
+    cursor: pointer;
 }
-header h1 { color:#00ffd5; text-shadow: 0 0 10px #00c2aa; }
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background: #1f1f1f;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mobile-nav a {
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hamburger.active + .mobile-nav {
+    display: flex;
+}
 
 /* Sections */
 section {padding:100px 20px 60px; max-width:900px; margin:auto;}
