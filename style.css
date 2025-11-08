@@ -1,16 +1,19 @@
-/* Reset */
+I'm/* Reset */
 * {margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 html {scroll-behavior: smooth;}
 body {background-color:#121212; color:#fff; line-height:1.6;}
 
-header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background: transparent;
-    padding: 20px;
-}
-header h1 { color:#00ffd5; text-shadow: 0 0 10px #00c2aa; }
+<header>
+  <h1>Luyonde Henry</h1>
+  <div class="hamburger">&#9776;</div>
+  <nav class="mobile-nav">
+    <a href="#home">Home</a>
+    <a href="#fundamentals">Forex Fundamentals</a>
+    <a href="#risk">Risk Management</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
 /* Sections */
 section {padding:100px 20px 60px; max-width:900px; margin:auto;}
